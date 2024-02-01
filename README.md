@@ -7,7 +7,7 @@ This project is a React experiment that uses the Swiggy Live API to fetch real-t
 
 1. Clone the repository:
 
-git clone https://github.com/yourusername/swiggy-live-api-react-experiment.git
+git clone  
 
 
 2. Navigate to the project directory:
