@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import store from "../../utils/store";
 import { StaticRouter } from "react-router-dom/server";
 
+
 test("Logo should load on rendering header", () => {
   // Load Header
   const header = render(
@@ -14,13 +15,15 @@ test("Logo should load on rendering header", () => {
     </StaticRouter>
   );
 
+
   // Check if logo is loaded
   const logo = header.getAllByTestId("logo");
 
   expect(logo[0].src).toBe("http://localhost/dummy.png");
 });
 
-test("Online Status should be green on rendering header", () => {
+ 
+
   // Load Header
   const header = render(
     <StaticRouter>
@@ -34,7 +37,7 @@ test("Online Status should be green on rendering header", () => {
   const onlineStatus = header.getByTestId("online-status");
 
   expect(onlineStatus.innerHTML).toBe("✅");
-});
+  
 
 test("Cart should have 0 items on rendering header", () => {
   // Load Header

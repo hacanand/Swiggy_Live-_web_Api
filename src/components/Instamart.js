@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { lazy, useState } from "react";
+
+const About = lazy(() => import("./About"))
 
 const Section = ({ title, description, isVisible, setIsVisible }) => {
   return (
@@ -67,3 +69,7 @@ const Instamart = () => {
 };
 
 export default Instamart;
+
+
+//lifting the state up
+//

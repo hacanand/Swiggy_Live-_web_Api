@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { filterData } from "../utils/helper";
 import useOnline from "../utils/useOnline";
 import UserContext from "../utils/UserContext";
-
+import useOnline from "../utils/useOnline";
 const Body = () => {
   const [allRestaurants, setAllRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
@@ -25,6 +25,8 @@ const Body = () => {
     setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
     setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
   }
+  const offline = useOnline();
+  if (offline) return <div>Offline,Please check your Internet connection</div>;
   if (!allRestaurants) return null;
 
   return allRestaurants?.length === 0 ? (

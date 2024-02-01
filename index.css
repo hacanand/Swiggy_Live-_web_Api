@@ -1,3 +1,15 @@
+/* 
+normal native css 
+ scss  
+ component libraries -material ui, bootstrap, ant design, chakra ui, tailwind css, styled components
+
+ styled components
+ tailwind css framework
+   -css on the go 
+   reusable css classes
+   flexible ui (customizable)
+    
+*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

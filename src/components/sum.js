@@ -16,7 +16,7 @@ export const sum = (a, b) => a + b;
  *
  *
  *
- * - Install React Testing Librabry
+ * - Install React Testing Library
  * - Install Jest
  * - configure Jest
  * - Installed jest-environment-jsdom
